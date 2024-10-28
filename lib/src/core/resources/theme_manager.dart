@@ -146,28 +146,35 @@ mixin AppTheme implements ThemeData {
           // horizontalTitleGap: 21.w,
         ),
 
-        //       //! search bar
-        //       searchBarTheme: SearchBarThemeData(
-        //         backgroundColor: MaterialStateProperty.all(
-        //           ColorManager.jetBlack,
-        //         ),
-        //         elevation: const MaterialStatePropertyAll(0),
-        //         shape: MaterialStatePropertyAll(
-        //           RoundedRectangleBorder(
-        //             side: const BorderSide(color: ColorManager.deepCharcoal),
-        //             borderRadius: BorderRadius.circular(100.r),
-        //           ),
-        //         ),
-        //         textStyle: MaterialStatePropertyAll(
-        //           _myTextTheme().titleSmall,
-        //         ),
-        //         hintStyle: MaterialStatePropertyAll(
-        //           StyleManager.getLightStyle(
-        //             color: ColorManager.whiteWithOpacity30,
-        //             fontSize: FontSize.s13,
-        //           ),
-        //         ),
-        //       ),
+        //! search bar
+        searchBarTheme: SearchBarThemeData(
+          backgroundColor: WidgetStateProperty.all(
+            ColorManager.softCloud,
+          ),
+          elevation: const WidgetStatePropertyAll(0),
+
+          padding: const WidgetStatePropertyAll(
+            EdgeInsets.symmetric(
+              vertical: 0,
+              horizontal: 25,
+            ),
+          ),
+          // shape: MaterialStatePropertyAll(
+          //   RoundedRectangleBorder(
+          //     side: const BorderSide(color: ColorManager.deepCharcoal),
+          //     borderRadius: BorderRadius.circular(100.r),
+          //   ),
+          // ),
+          // textStyle: MaterialStatePropertyAll(
+          //   _myTextTheme().titleSmall,
+          // ),
+          // hintStyle: WidgetStatePropertyAll(
+          //   StyleManager.getLightStyle(
+          //     color: ColorManager.whiteWithOpacity30,
+          //     fontSize: FontSize.s13,
+          //   ),
+          // ),
+        ),
 
         //       //! Bottom Nav Bar Theme
         //       bottomNavigationBarTheme: BottomNavigationBarThemeData(

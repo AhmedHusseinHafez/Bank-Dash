@@ -12,6 +12,8 @@ class ColorManager {
   static const Color secondary = Color(0xffFE5C73);
   static const Color silverGray = Color(0xffB1B1B1);
   static const Color vividBlue = Color(0xff1814F3);
+  static const Color softCloud = Color(0xffF5F7FA);
+  static const Color mutedBlue = Color(0xff8BA3CB);
 
   static const Color black = Color(0xff000000);
 
