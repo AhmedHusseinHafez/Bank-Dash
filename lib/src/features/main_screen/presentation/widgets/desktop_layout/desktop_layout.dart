@@ -1,5 +1,5 @@
 import 'package:bank_dash/src/core/resources/strings_manager.dart';
-import 'package:bank_dash/src/features/dashboard/presentation/dashboard_screen.dart';
+import 'package:bank_dash/src/features/dashboard/presentation/views/dashboard_screen.dart';
 import 'package:bank_dash/src/features/main_screen/presentation/widgets/custom_drawer.dart';
 import 'package:bank_dash/src/features/main_screen/presentation/widgets/desk_top_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -29,10 +29,16 @@ class _DesktopLayoutState extends State<DesktopLayout> {
           const SizedBox(width: 2),
           Expanded(
             flex: 5,
-            child: Column(
-              children: [
-                DeskTopAppBar(title: title),
-                _getContentForActiveItem(),
+            child: CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Column(
+                    children: [
+                      DeskTopAppBar(title: title),
+                      _getContentForActiveItem(),
+                    ],
+                  ),
+                )
               ],
             ),
           ),

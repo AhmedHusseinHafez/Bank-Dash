@@ -82,11 +82,73 @@ class StyleManager {
     return _getTextStyle(context, fontSize ?? FontSize.s12,
         FontWeightManager.semiBold, color ?? ColorManager.darkCerulean, height);
   }
+
+  // lato style
+  static TextStyle getLatoSemiBoldStyle(BuildContext context,
+      {double? fontSize, Color? color, double? height}) {
+    return TextStyle(
+      fontFamily: FontConstants.latoFontFamily,
+      fontWeight: FontWeightManager.semiBold,
+      fontSize:
+          getResponsiveFontSize(context, fontSize: fontSize ?? FontSize.s12),
+      color: color ?? ColorManager.white,
+      height: height,
+    );
+  }
+
+  static TextStyle getLatoRegularStyle(BuildContext context,
+      {double? fontSize, Color? color, double? height}) {
+    return TextStyle(
+      fontFamily: FontConstants.latoFontFamily,
+      fontWeight: FontWeightManager.regular,
+      fontSize:
+          getResponsiveFontSize(context, fontSize: fontSize ?? FontSize.s12),
+      color: color ?? ColorManager.white,
+      height: height,
+    );
+  }
+
+  static TextStyle getLatoLightStyle(BuildContext context,
+      {double? fontSize, Color? color, double? height}) {
+    return TextStyle(
+      fontFamily: FontConstants.latoFontFamily,
+      fontWeight: FontWeightManager.light,
+      fontSize:
+          getResponsiveFontSize(context, fontSize: fontSize ?? FontSize.s12),
+      color: color ?? ColorManager.white,
+      height: height,
+    );
+  }
+
+  static TextStyle getLatoMediumStyle(BuildContext context,
+      {double? fontSize, Color? color, double? height}) {
+    return TextStyle(
+      fontFamily: FontConstants.latoFontFamily,
+      fontWeight: FontWeightManager.medium,
+      fontSize:
+          getResponsiveFontSize(context, fontSize: fontSize ?? FontSize.s12),
+      color: color ?? ColorManager.white,
+      height: height,
+    );
+  }
+
+  static TextStyle getLatoBoldStyle(BuildContext context,
+      {double? fontSize, Color? color, double? height}) {
+    return TextStyle(
+      fontFamily: FontConstants.latoFontFamily,
+      fontWeight: FontWeightManager.bold,
+      fontSize:
+          getResponsiveFontSize(context, fontSize: fontSize ?? FontSize.s12),
+      color: color ?? ColorManager.white,
+      height: height,
+    );
+  }
 }
 
 // scaleFactor
 // responsive font size
 // (min , max) font size
+
 double getResponsiveFontSize(context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
@@ -97,6 +159,8 @@ double getResponsiveFontSize(context, {required double fontSize}) {
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
 
+/// This formula is based on the assumption that the design is based on a screen
+/// width of 411px.
 double getScaleFactor(context) {
   // var dispatcher = PlatformDispatcher.instance;
   // var physicalWidth = dispatcher.views.first.physicalSize.width;

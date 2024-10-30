@@ -85,7 +85,8 @@ mixin AppTheme implements ThemeData {
           contentPadding: const EdgeInsets.all(20),
 
           filled: true,
-          fillColor: ColorManager.whiteSmoke,
+
+          fillColor: ColorManager.textFiledBackground,
 
           // hintStyle: _getTFFFontStyle(),
           // labelStyle: _getTFFFontStyle(),
@@ -104,9 +105,11 @@ mixin AppTheme implements ThemeData {
 
         textButtonTheme: const TextButtonThemeData(
           style: ButtonStyle(
-            backgroundColor: WidgetStatePropertyAll<Color>(ColorManager.white),
-            // foregroundColor:
-            //     WidgetStatePropertyAll<Color>(ColorManager.primary),
+            padding: WidgetStatePropertyAll<EdgeInsets>(EdgeInsets.zero),
+            backgroundColor:
+                WidgetStatePropertyAll<Color>(ColorManager.transparent),
+            foregroundColor:
+                WidgetStatePropertyAll<Color>(ColorManager.primary2),
             // textStyle: WidgetStatePropertyAll<TextStyle>(
             //   StyleManager.getLightStyle(fontSize: FontSize.s16),
             // ),

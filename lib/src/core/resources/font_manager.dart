@@ -10,6 +10,8 @@ class FontConstants {
   static const String defaultFontFamily = "Inter_18pt";
 
   static const String montFontFamily = "Mont-Heavy-DEMO";
+
+  static const String latoFontFamily = "Lato";
 }
 
 class FontWeightManager {
@@ -32,11 +34,14 @@ class FontSize {
 
   static double s12 = 12;
 
+  static double s13 = 13;
+
   static double s14 = 14;
 
   static double s15 = 15;
 
   static double s16 = 16;
+  static double s17 = 17;
 
   static double s18 = 18;
 

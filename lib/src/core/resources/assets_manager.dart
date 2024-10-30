@@ -16,6 +16,10 @@ class AssetsManager {
 
   static const String svgApple = "$svgPath/apple.svg";
 
+  static const String svgTwoEllipse = "$svgPath/two_ellipse.svg";
+  static const String svgTwoEllipseInactive =
+      "$svgPath/two_ellipse_inactive.svg";
+
   static const String svgAppleGreen = "$svgPath/apple_green.svg";
 
   static const String svgArrowDown = "$svgPath/arrow_down.svg";
