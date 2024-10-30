@@ -4,12 +4,12 @@ import 'package:bank_dash/src/core/resources/strings_manager.dart';
 import 'package:bank_dash/src/core/resources/styles_manager.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/balance_history.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/expense_chart.dart';
+import 'package:bank_dash/src/features/dashboard/presentation/widgets/quick_transfer.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/recent_transaction.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/weekly_activity_chart.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/my_active_card.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/my_cards_header.dart';
 import 'package:bank_dash/src/features/dashboard/presentation/widgets/my_inactive_card.dart';
-import 'package:bank_dash/src/features/main_screen/presentation/widgets/quick_transfer.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatelessWidget {
